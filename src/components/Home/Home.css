@@ -1,5 +1,13 @@
 .home-container {
   background-color: ;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.header-container {
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/12/19/54/homework-1735644__480.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 .quiz-container {
   display: grid;

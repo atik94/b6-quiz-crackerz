@@ -8,7 +8,9 @@ const Home = () => {
   //console.log(quizs);
   return (
     <div className="home-container">
-      <h2>This is home pge</h2>
+      <div className="header-container">
+        <h2>Get started with interect</h2>
+      </div>
       <div className="quiz-container">
         {quizs.map((quiz) => (
           <Quiz key={quiz.id} quiz={quiz}></Quiz>

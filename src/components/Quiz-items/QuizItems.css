@@ -1,0 +1,14 @@
+.quiz-item {
+  margin-top: 50px;
+}
+.quiz-item h2 {
+  margin-bottom: 50px;
+}
+.quiz-item-show {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.quiz-item-show button {
+  padding: 20px;
+}

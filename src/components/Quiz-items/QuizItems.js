@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./QuizItems.css";
 const QuizItems = ({ item }) => {
   const { options, question, id, correctAnswer } = item;
   //   const [quizQuestion, setQuizQuestion] = useState(question);
@@ -17,12 +18,13 @@ const QuizItems = ({ item }) => {
     }
   }
   return (
-    <div>
+    <div className="quiz-item">
       <h2>{question}</h2>
-      <div>{/* <button>{options}</button> */}</div>
-      {options.map((option) => (
-        <button onClick={() => isTrue(option)}>{option}</button>
-      ))}
+      <div className="quiz-item-show">
+        {options.map((option) => (
+          <button onClick={() => isTrue(option)}>{option}</button>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import QuizItems from "../Quiz-items/QuizItems";
+import "./QuizDetails.css";
 
 const QuizDetail = () => {
   //const [quizQuestion, setQuizQuestion] = useState();
@@ -11,10 +12,12 @@ const QuizDetail = () => {
   //console.log(dataItems);
   return (
     <div>
-      <h2>This is about Quizdetils total</h2>
-      {dataItems.map((item) => (
-        <QuizItems id={item.id} item={item}></QuizItems>
-      ))}
+      <h2>Quiz of {QuizData.name}</h2>
+      <div className="quiz-card">
+        {dataItems.map((item) => (
+          <QuizItems id={item.id} item={item}></QuizItems>
+        ))}
+      </div>
     </div>
   );
 };

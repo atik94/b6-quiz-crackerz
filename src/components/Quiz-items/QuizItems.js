@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./QuizItems.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const QuizItems = ({ item }) => {
   const { options, question, id, correctAnswer } = item;
   //   const [quizQuestion, setQuizQuestion] = useState(question);
@@ -17,9 +19,17 @@ const QuizItems = ({ item }) => {
       alert("your answer is Incorrect");
     }
   }
+  function correctAnswers() {
+    alert(correctAnswer);
+  }
   return (
     <div className="quiz-item">
-      <h2>{question}</h2>
+      <h2>
+        {question}{" "}
+        <span onClick={correctAnswers}>
+          <i class="fa-solid fa-eye"></i>
+        </span>
+      </h2>
       <div className="quiz-item-show">
         {options.map((option) => (
           <button onClick={() => isTrue(option)}>{option}</button>

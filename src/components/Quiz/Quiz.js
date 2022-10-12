@@ -9,7 +9,7 @@ const Quiz = ({ quiz }) => {
       <div className="quiz-item">
         <h2>{name}</h2>
         <Link to={`/quiz/${id}`}>
-          <button>Start practice</button>
+          <button className="btn btn-primary">Start practice</button>
         </Link>
       </div>
     </div>

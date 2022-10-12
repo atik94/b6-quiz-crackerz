@@ -12,3 +12,8 @@
 .quiz-item-show button {
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .quiz-item-show {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

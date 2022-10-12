@@ -14,13 +14,15 @@ const QuizItems = ({ item }) => {
   function isTrue(option) {
     if (option === correctAnswer) {
       console.log(correctAnswer);
-      alert("your answer is correct");
+
+      toast.success("Your answer is correct");
     } else {
-      alert("your answer is Incorrect");
+      toast.error("Your answer is wrong");
     }
   }
   function correctAnswers() {
-    alert(correctAnswer);
+    // alert(correctAnswer);
+    toast.success(correctAnswer);
   }
   return (
     <div className="quiz-item">
@@ -34,6 +36,7 @@ const QuizItems = ({ item }) => {
         {options.map((option) => (
           <button onClick={() => isTrue(option)}>{option}</button>
         ))}
+        <ToastContainer autoClose={1000} />
       </div>
     </div>
   );

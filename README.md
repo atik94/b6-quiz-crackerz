@@ -1,4 +1,4 @@
-# Project Name: Quix Ultra
+# Project Name: Quiz Ultra
 
 ## Description: This is a small quiz applicaton.
 

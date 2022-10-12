@@ -9,7 +9,17 @@
   background-size: cover;
   height: 400px;
 }
+.header-container h2 {
+  margin-top: 150px;
+}
 .quiz-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #add8e6;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .quiz-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

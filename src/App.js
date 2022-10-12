@@ -21,10 +21,6 @@ function App() {
           element: <Home></Home>,
         },
         {
-          path: "/topics",
-          element: <Topics></Topics>,
-        },
-        {
           path: "/statistics",
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Statistics></Statistics>,

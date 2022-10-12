@@ -7,6 +7,7 @@ import Topics from "./components/Topics/Topics";
 import Statistics from "./components/Statistics/Statistics";
 import Blog from "./components/Blog/Blog";
 import QuizDetail from "./components/Quiz-details/QuizDetail";
+import NotFound from "./components/Not-found/NotFound";
 
 function App() {
   const router = createBrowserRouter([
@@ -43,7 +44,7 @@ function App() {
     },
     {
       path: "*",
-      element: <div> This route is not found</div>,
+      element: <NotFound></NotFound>,
     },
   ]);
   return (
